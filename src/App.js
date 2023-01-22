@@ -55,6 +55,7 @@ function App() {
   }
 
   const getResponse = (e) => {
+    console.log(e)
     let a = 2, b = 3, c = 4, d = 5;
     if (mode === 1) {a++;b++;c++; d++;};
     e.target.ownerDocument.body.childNodes[3].childNodes[0].childNodes[1].childNodes[0].childNodes.forEach((node, index) => {
