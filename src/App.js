@@ -57,9 +57,7 @@ function App() {
   const getResponse = (e) => {
     let a = 2, b = 3, c = 4, d = 5;
     if (mode === 1) {a++;b++;c++; d++;};
-    const ownerDiv = e.target.ownerDocument.body
-    .childNodes[3].childNodes[0].childNodes[1].childNodes[0].childNodes;
-    ownerDiv.forEach((node, index) => {
+    e.target.ownerDocument.body.childNodes[3].childNodes[0].childNodes[1].childNodes[0].childNodes.forEach((node, index) => {
       if (index === a || index === b || index === c || index === d) {
         node.disabled = true;
         node.childNodes[2].style.opacity = 1;
